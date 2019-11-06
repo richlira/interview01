@@ -12,32 +12,65 @@
 </head>
 
 <body>
-    <button type="button" onclick="botonazo()">Get Stats</button>
-    <button type="button" onclick="jungleSound()">Jungla todos los sonidos</button>
+
+    <div class="contain ">
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" onclick="getStats()">Get Stats (DOM y Consola)</button>
+                <button type="button" class="btn btn-success" onclick="jungleSound()">Jungla todos los sonidos (Consola)</button>
+            </div>
+
+        </div>
+    </div>
 
     <div class="container">
-        <div class="row left">
-            <div class="col">
-                <img src="tiger.png">
-                <h2>Tiger</h2>
-                <div id="tiger01"></div>
-            </div>
-        </div>
-        <div class="row left">
-            <div class="col">
-                <img src="monkey.png" width="20%">
-                <h2>Monkey Normal</h2>
-                <div id="monkey01"></div>
-            </div>
-        </div>
         <div class="row">
-            <div class="col">
-                <img src="snake.jpg" width="30%">
-                <h2>Snake Normal</h2>
-                <div id="snake01"></div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="tiger.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tigre</h5>
+                        <p class="card-text" id="tigre"></p>
+                        <p class="card-text" id="tigreEat"></p>
+                        <a href="#" class="btn btn-primary" onclick="tigreEatGrain()">Eat Grain</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="monkey.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chango</h5>
+                        <p class="card-text" id="chango"></p>
+                        <p class="card-text" id="changoPlay"></p>
+                        <a href="#" class="btn btn-primary" onclick="changoPlay()">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="monkeysleep.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chango cansado</h5>
+                        <p class="card-text" id="changocansado"></p>
+                        <p class="card-text" id="changoCansadoPlay"></p>
+                        <a href="#" class="btn btn-primary" onclick="changitoCansadoPlay()">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="snake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibora</h5>
+                        <p class="card-text" id="vibora"></p>
+                        <a href="#" class="btn btn-primary" onclick="vibora.makeSound()">Make Sound (console)</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="index.js"></script>
 </body>
 
